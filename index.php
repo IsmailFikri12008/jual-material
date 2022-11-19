@@ -41,7 +41,7 @@ $material = query("SELECT * FROM material");
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="login.php">Login</a></li>
-                        <li><a href="registrasi.php">Registrasi</a></li>
+                        <!-- <li><a href="registrasi.php">Registrasi</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -51,7 +51,7 @@ $material = query("SELECT * FROM material");
     <!--Sidenav-->
     <ul class="sidenav" id="mobile-nav">
         <li><a href="login.php">Login</a></li>
-        <li><a href="registrasi.php">Registrasi</a></li>
+        <!-- <li><a href="registrasi.php">Registrasi</a></li> -->
     </ul>
 
     <section id="services" class="services white lighten-3 scrollspy">

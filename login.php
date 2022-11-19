@@ -119,6 +119,7 @@ if(isset($_POST['submit'])) {
         <div class="signin-signup">
             <form action="" method="POST" class="sign-in-form">
                 <h2 class="title">Sign In</h2>
+                <h2 class="title">Hanya Admin Yang Boleh Login</h2>
                 <?php if (isset($error)) : ?>
                     <p style="color: red; font-style:italic;">Username atau Password Salah</p>
                 <?php endif; ?>

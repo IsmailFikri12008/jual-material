@@ -151,24 +151,24 @@ function ubah($data) {
     return mysqli_affected_rows($conn);
 }
 
-function registrasi($data) 
-{
-    $conn = koneksi();
-    $username = strtolower(stripcslashes($data["username"]));
-    $password = mysqli_real_escape_string($conn, $data["password"]);
+// function registrasi($data) 
+// {
+//     $conn = koneksi();
+//     $username = strtolower(stripcslashes($data["username"]));
+//     $password = mysqli_real_escape_string($conn, $data["password"]);
 
-    $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username' ");
-    if (mysqli_fetch_assoc($result)) {
-        echo "<script>
-                alert('username sudah digunakan');
-            </script>";
-        return false;
-    }
+//     $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username' ");
+//     if (mysqli_fetch_assoc($result)) {
+//         echo "<script>
+//                 alert('username sudah digunakan');
+//             </script>";
+//         return false;
+//     }
 
-    $password = password_hash($password, PASSWORD_DEFAULT);
+//     $password = password_hash($password, PASSWORD_DEFAULT);
 
-    $query_tambah = "INSERT INTO user VALUES('', '$username', '$password')";
-    mysqli_query($conn, $query_tambah);
+//     $query_tambah = "INSERT INTO user VALUES('', '$username', '$password')";
+//     mysqli_query($conn, $query_tambah);
 
-    return mysqli_affected_rows($conn);
-}
+//     return mysqli_affected_rows($conn);
+// }
